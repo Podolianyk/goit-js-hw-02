@@ -2,7 +2,7 @@
 //  відповідно до заданої максимальної довжини(параметр maxLength)
 function formatMessage(message, maxLength) {
     // Якщо довжина рядка дорівнює або менша за maxLength, то функція повертає початковий рядок без змін
-    if (message.lenght <= maxLength) {
+    if (message.length <= maxLength) {
     return message;
 }
     else {

@@ -5,14 +5,14 @@
 // customerCredits — сума коштів на рахунку клієнта
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
 // змінна загальної суми замовлення
-let totalPrice = quantity * pricePerDroid;
+const totalPrice = quantity * pricePerDroid;
 //якщо сума до сплати перевищує кількість кредитів на рахунку клієнта, то повернає повідомлення:
     if (totalPrice > customerCredits) {
-      return `"Insufficient funds!"`
+      return "Insufficient funds!"
     }
   //якщо суми на рахунку клієнта достатньо, то повернає повідомлення:
     else {
-       return `"You ordered ${quantity} droids worth ${totalPrice} credits!"`
+       return `You ordered ${quantity} droids worth ${totalPrice} credits!`
 }
 }
 

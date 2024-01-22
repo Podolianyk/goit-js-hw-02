@@ -2,15 +2,9 @@
 // і повертає результат перевірки.Слова в рядку параметра message можуть бути в довільному регістрі, наприклад SPAM або sAlE
 function checkForSpam(message) {
 //рядок message приводимо до нижнього регістру
-    let lowerCaseMessage = message.toLowerCase();
+    const normalizedMessage = message.toLowerCase();
     // Якщо у рядку message знайдено заборонене слово (spam або sale), то функція повертає буль true
-if (lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale")) {
-return true;
-}
-    // Якщо в рядку message відсутні заборонені слова, функція повертає буль false
-else {
-return false;
-}
+    return normalizedMessage.includes("spam") || normalizedMessage.includes("sale");
 }
 
 console.log(checkForSpam("Latest technology news")); // false

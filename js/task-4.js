@@ -2,27 +2,27 @@
 // і повертати повідомлення про результат.
 function getShippingCost(country) {
     //змінні вартості доставки у країну
-    let priceChina = 100;
-    let priceChile = 250;
-    let priceAustralia = 170;
-    let priceJamaica = 120;
+    const priceChina = 100;
+    const priceChile = 250;
+    const priceAustralia = 170;
+    const priceJamaica = 120;
 
     switch (country) {
         //якщо країна користувача China, то повертається повідомлення з вартістю доставки:
         case "China":
-            return `"Shipping to ${country} will cost ${priceChina} credits"`
+            return `Shipping to ${country} will cost ${priceChina} credits`
         //якщо країна користувача Chile, то повертається повідомлення з вартістю доставки:
         case "Chile":
-            return `"Shipping to ${country} will cost ${priceChile} credits"`
+            return `Shipping to ${country} will cost ${priceChile} credits`
         //якщо країна користувача Australia, то повертається повідомлення з вартістю доставки:
         case "Australia":
-            return `"Shipping to ${country} will cost ${priceAustralia} credits"`
+            return `Shipping to ${country} will cost ${priceAustralia} credits`
         //якщо країна користувача Jamaica, то повертається повідомлення з вартістю доставки:
         case "Jamaica":
-            return `"Shipping to ${country} will cost ${priceJamaica} credits"`
+            return `Shipping to ${country} will cost ${priceJamaica} credits`
         default:
             //Якщо зазначена країна відсутня у списку доставки, то функція повинна повернути рядок:
-            return `"Sorry, there is no delivery to your country"`
+            return `Sorry, there is no delivery to your country`
     }
 }
 
